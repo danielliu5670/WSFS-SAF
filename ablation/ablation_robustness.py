@@ -47,7 +47,7 @@ df_f = pd.read_pickle(args.features_pkl)
 df_f["features"] = df_f["features"].apply(unwrap_feature)
 df_f["__index_level_0__"] = df_f["__index_level_0__"].astype(str)
 
-df_c = load_dataset(args.cov_ds)["train"].to_pandas()
+df_c = pd.read_parquet(args.cov_ds)
 df_c["__index_level_0__"] = df_c["__index_level_0__"].astype(str)
 df_c["year"] = df_c["year"].astype(int)
 
@@ -91,7 +91,7 @@ and any rows with missing correlation values are dropped.
 The year and company identifiers are properly formatted, 
 and the dataset is merged with the feature index to associate each company in the pairs with its corresponding feature index. 
 This allows for efficient retrieval of the selected features for each company when computing the similarity scores for the pairs."""
-pairs_df = load_dataset(args.original_pairs_ds)["train"].to_pandas()
+pairs_df = pd.read_parquet(args.original_pairs_ds)
 pairs_df = pairs_df.dropna(subset=["correlation"])
 pairs_df["year"] = pairs_df["year"].astype(int)
 pairs_df["Company1"] = pairs_df["Company1"].astype(str)

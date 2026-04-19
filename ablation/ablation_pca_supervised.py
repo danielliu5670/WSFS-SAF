@@ -73,7 +73,7 @@ df_f = pd.read_pickle(args.features_pkl)
 df_f["features"] = df_f["features"].apply(unwrap_feature)
 df_f["__index_level_0__"] = df_f["__index_level_0__"].astype(str)
 
-df_c = load_dataset(args.cov_ds)["train"].to_pandas()
+df_c = pd.read_parquet(args.cov_ds)
 df_c["__index_level_0__"] = df_c["__index_level_0__"].astype(str)
 df_c["year"] = df_c["year"].astype(int)
 
@@ -100,7 +100,7 @@ del feat_matrix; gc.collect()
 
 """The original pairs dataset is loaded,
  and any rows with missing correlation values are dropped."""
-pairs_df = load_dataset(args.original_pairs_ds)["train"].to_pandas()
+pairs_df = pd.read_parquet(args.original_pairs_ds)
 pairs_df = pairs_df.dropna(subset=["correlation"])
 pairs_df["year"] = pairs_df["year"].astype(int)
 pairs_df["Company1"] = pairs_df["Company1"].astype(str)
@@ -144,12 +144,18 @@ corr_train_std = corr_train.std()
 For each PCA dimension, it calculates the product of the corresponding PCA features for the two companies in each pair, demeans it,
  and then computes a score that reflects how well this product correlates with the demeaned correlation values.
  The score is normalized by the standard deviation of the product to ensure comparability across dimensions."""
-for j in range(args.pca_dims):
-    products = pca_features[idx1_train, j] * pca_features[idx2_train, j]
-    prod_demean = products - products.mean()
-    prod_std = prod_demean.std()
-    if prod_std > 0:
-        scores[j] = (prod_demean * corr_train_demean).mean() / (prod_std * corr_train_std)
+n_train = len(corr_train)
+chunk_size = 500
+for start in range(0, args.pca_dims, chunk_size):
+    end = min(start + chunk_size, args.pca_dims)
+    products_chunk = (pca_features[idx1_train, start:end] *
+                      pca_features[idx2_train, start:end])       # (n_train, chunk_size)
+    chunk_std = products_chunk.std(axis=0)                        # (chunk_size,)
+    chunk_numer = products_chunk.T @ corr_train_demean / n_train  # (chunk_size,)
+    valid = chunk_std > 0
+    chunk_scores = np.zeros(end - start, dtype=np.float64)
+    chunk_scores[valid] = chunk_numer[valid] / (chunk_std[valid] * corr_train_std)
+    scores[start:end] = chunk_scores
 
 """The PCA dimensions are ranked based on their scores, and the top-k dimensions with positive scores are selected.
  If no dimensions have positive scores, the script exits with an error message."""

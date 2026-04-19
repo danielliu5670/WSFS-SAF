@@ -57,7 +57,7 @@ are created - ds, which requires both the return correlation and cosine similari
 between the two companies, and pairs_df, which only requires the correlation.
 """
 
-raw = load_dataset(args.original_pairs_ds)["train"].to_pandas()
+raw = pd.read_parquet(args.original_pairs_ds)
 
 ds = raw.dropna(subset=["correlation", "cosine_similarity"]).copy()
 ds["year"] = ds["year"].astype(int)
@@ -86,7 +86,7 @@ pop_corr = pairs_df["correlation"].mean()
 This section loads the metadata, also from HuggingFace.
 """
 
-df_c = load_dataset(args.cov_ds)["train"].to_pandas()
+df_c = pd.read_parquet(args.cov_ds)
 df_c["__index_level_0__"] = df_c["__index_level_0__"].astype(str)
 df_c["year"] = df_c["year"].astype(int)
 

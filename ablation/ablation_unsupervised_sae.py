@@ -106,7 +106,7 @@ df_f = pd.read_pickle(args.features_pkl)
 df_f["features"] = df_f["features"].apply(unwrap_feature)
 df_f["__index_level_0__"] = df_f["__index_level_0__"].astype(str)
 
-df_c = load_dataset(args.cov_ds)["train"].to_pandas()
+df_c = pd.read_parquet(args.cov_ds)
 df_c["__index_level_0__"] = df_c["__index_level_0__"].astype(str)
 df_c["year"] = df_c["year"].astype(int)
 
@@ -133,6 +133,7 @@ norms = np.linalg.norm(feat_matrix, axis=1).astype(np.float32)
 norms = np.clip(norms, 1e-10, None)
 
 
+pairs_df = pd.read_parquet(args.original_pairs_ds)
 pairs_df = pairs_df.dropna(subset=["correlation"])
 pairs_df["year"] = pairs_df["year"].astype(int)
 pairs_df["Company1"] = pairs_df["Company1"].astype(str)

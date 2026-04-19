@@ -67,7 +67,7 @@ This section pulls the sparse autoencoder feature vectors from the input pickle 
 
 df_f["features"] = df_f["features"].apply(unwrap_feature)
 
-df_c = load_dataset(args.cov_ds)["train"].to_pandas()
+df_c = pd.read_parquet(args.cov_ds)
 
 df_f["__index_level_0__"] = df_f["__index_level_0__"].astype(str)
 df_c["__index_level_0__"] = df_c["__index_level_0__"].astype(str)
@@ -97,7 +97,7 @@ This section loads the data from the parent paper from HuggingFace. This dataset
 requires both the return correlation and cosine similarity between the two companies.
 """
 
-pairs_df = load_dataset(args.original_pairs_ds)["train"].to_pandas()
+pairs_df = pd.read_parquet(args.original_pairs_ds)
 pairs_df = pairs_df.dropna(subset=["correlation"])
 pairs_df["year"] = pairs_df["year"].astype(int)
 pairs_df["Company1"] = pairs_df["Company1"].astype(str)

@@ -228,7 +228,7 @@ This section pulls the company pairs from HuggingFace, drops any NA values, and
 standardizes the columns to all be of the same type (int, str, str).
 """
 
-raw = load_dataset(args.original_pairs_ds)["train"].to_pandas()
+raw = pd.read_parquet(args.original_pairs_ds)
 pairs_df = raw.dropna(subset=["correlation", "cosine_similarity"]).copy()
 pairs_df["year"] = pairs_df["year"].astype(int)
 pairs_df["Company1"] = pairs_df["Company1"].astype(str)
@@ -254,7 +254,7 @@ feature vectors from the input pickle file (see collect_features.py). It then, f
 company, merges both of these sources. 
 """
 
-df_c = load_dataset(args.cov_ds)["train"].to_pandas()
+df_c = pd.read_parquet(args.cov_ds)
 df_c["__index_level_0__"] = df_c["__index_level_0__"].astype(str)
 df_c["year"] = df_c["year"].astype(int)
 
