@@ -25,7 +25,7 @@ def unwrap_feature(x):
 P = argparse.ArgumentParser()
 P.add_argument("--features-pkl", required=True)
 P.add_argument("--load-model", required=True)
-P.add_argument("--top-k", type=int, default=1250)
+P.add_argument("--top-k", type=int, default=2000)
 P.add_argument("--pair-batch", type=int, default=500_000)
 P.add_argument(
     "--cov-ds",
