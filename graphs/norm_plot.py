@@ -25,7 +25,7 @@ def unwrap_feature(x):
 P = argparse.ArgumentParser()
 P.add_argument("--features-pkl", required=True)
 P.add_argument("--load-model", required=True)
-P.add_argument("--top-k", type=int, default=1250)
+P.add_argument("--top-k", type=int, default=2000)
 P.add_argument("--pair-batch", type=int, default=500_000)
 P.add_argument("--out-dir", default=".")
 P.add_argument("--scatter", action="store_true",
@@ -162,7 +162,7 @@ cb = fig.colorbar(hb, ax=ax)
 cb.set_label("Log count", fontsize=10)
 
 fig.tight_layout()
-out_hex = os.path.join(args.out_dir, "norm_vs_similarity_hexbin.png")
+out_hex = os.path.join(args.out_dir, "figures/norm_vs_similarity_hexbin.png")
 fig.savefig(out_hex, dpi=args.dpi, bbox_inches="tight")
 plt.close(fig)
 
@@ -197,6 +197,6 @@ if args.scatter:
     ax.legend(fontsize=10, loc="upper left")
 
     fig.tight_layout()
-    out_scat = os.path.join(args.out_dir, "norm_vs_similarity_scatter.png")
+    out_scat = os.path.join(args.out_dir, "figures/norm_vs_similarity_scatter.png")
     fig.savefig(out_scat, dpi=args.dpi, bbox_inches="tight")
     plt.close(fig)
