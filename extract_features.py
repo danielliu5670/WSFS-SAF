@@ -371,8 +371,6 @@ for top_k in args.top_k:
         where we iterate through each of the percentages entered by the user.
         """
 
-        rho, pval = spearmanr(cos_sims, correlations)
-
         sorted_indices = np.argsort(cos_sims)[::-1] # All negatives are removed in this step.
         all_prec = {}
         for pct in pct_thresholds:
@@ -388,6 +386,8 @@ for top_k in args.top_k:
         test_sims = cos_sims[test_mask]
         test_corrs = correlations[test_mask]
         test_sorted = np.argsort(test_sims)[::-1] # Once again, negative values are filtered out.
+
+        rho, pval = spearmanr(test_sims, test_corrs)
 
         oos_prec = {}
         oos_top1_corr = np.nan
