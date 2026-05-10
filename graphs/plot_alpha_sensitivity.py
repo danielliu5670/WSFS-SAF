@@ -30,13 +30,13 @@ fig, ax = plt.subplots(figsize=(8, 6))
 
 # Background lines first (other K values)
 for k, vals in grid:
-    if k != 1000:
+    if k != 2000:
         ax.plot(alphas, vals, color="#C0C0C0", marker="o", markersize=4,
                 linewidth=1.0, label=f"K = {k}")
 
 # Emphasized line on top
 for k, vals in grid:
-    if k == 1000:
+    if k == 2000:
         ax.plot(alphas, vals, color="#4878A8", marker="o", markersize=5,
                 linewidth=2.0, label=f"K = {k}", zorder=3)
 
