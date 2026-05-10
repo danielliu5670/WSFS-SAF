@@ -1,0 +1,624 @@
+
+┌────────────────────────┬──────────────────────────────┬──────┬──────┬──────────┬────────────────────────────────────────────────────────────┐
+│ Feature                │ Company                      │ Year │ SIC  │ Activ.   │ Description                                                │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #1: idx 52624          │ POLARITYTE, INC.             │ 2018 │ 2836 │ 14.7     │ Item 1. Business PolarityTE - Welcome to the SHIFT         │
+│ s=0.1255               │                              │      │      │          │ PolarityTE Inc., headquartered in Salt Lake City, Utah, is │
+│ n=2821                 │                              │      │      │          │ a young and growing commercial-stage, biotechnology        │
+│                        │                              │      │      │          │ company founded in 2016 - and we believe the first of its  │
+│                        │                              │      │      │          │ kind. We are focused on the design and development of      │
+│                        │                              │      │      │          │ novel technology platforms…                                │
+│                        │ OSI SYSTEMS INC              │ 2010 │ 3674 │ 9.9      │ ITEM 1. BUSINESS General OSI Systems, Inc., together with  │
+│                        │                              │      │      │          │ its subsidiaries, is a vertically integrated designer and  │
+│                        │                              │      │      │          │ manufacturer of specialized electronic systems and         │
+│                        │                              │      │      │          │ components for critical applications. We sell our products │
+│                        │                              │      │      │          │ in diversified markets, including homeland security,       │
+│                        │                              │      │      │          │ healthcare, defense a…                                     │
+│                        │ SUNLINK HEALTH SYSTEMS INC   │ 2009 │ 8062 │ 9.2      │ Item 1. Business (all dollar amounts in thousands except   │
+│                        │                              │      │      │          │ share, per share and revenue per equivalent admission      │
+│                        │                              │      │      │          │ amounts) Overview We are SunLink Health Systems, Inc.      │
+│                        │                              │      │      │          │ Unless the context indicates otherwise, all references to  │
+│                        │                              │      │      │          │ “SunLink,” “we,” “our,” “ours,” “us” and the “Company”     │
+│                        │                              │      │      │          │ refer to SunLink Healt…                                    │
+│                        │ Aberdeen Standard Palladium E│ 2018 │ 6221 │ 8.1      │ Item 1. Business The purpose of the Aberdeen Standard      │
+│                        │                              │      │      │          │ Palladium ETF Trust (the “Trust”), formerly known as ETFS  │
+│                        │                              │      │      │          │ Palladium Trust prior to October 1, 2018, is to own        │
+│                        │                              │      │      │          │ palladium transferred to the Trust in exchange for shares  │
+│                        │                              │      │      │          │ issued by the Trust (“Shares”). Each Share represents a    │
+│                        │                              │      │      │          │ fractional undivided b…                                    │
+│                        │ Aberdeen Standard Platinum ET│ 2020 │ 6221 │ 7.0      │ Item 1. Business The purpose of the Aberdeen Standard      │
+│                        │                              │      │      │          │ Platinum ETF Trust (the “Trust”) is to own platinum        │
+│                        │                              │      │      │          │ transferred to the Trust in exchange for shares issued by  │
+│                        │                              │      │      │          │ the Trust (“Shares”). Each Share represents a fractional   │
+│                        │                              │      │      │          │ undivided beneficial interest in and ownership of the      │
+│                        │                              │      │      │          │ Trust. The assets of the …                                 │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #2: idx 18355          │ RELIANCE STEEL & ALUMINUM CO │ 2003 │ 5051 │ 28.2     │ Item 1. Business. We are one of the five largest metals    │
+│ s=0.1196               │                              │      │      │          │ service center companies in the United States. Our network │
+│ n=4084                 │                              │      │      │          │ of 24 divisions, 19 operating subsidiaries and one         │
+│                        │                              │      │      │          │ 50.5%-owned company operates 106 processing and            │
+│                        │                              │      │      │          │ distribution facilities in 30 states, Belgium, France and  │
+│                        │                              │      │      │          │ South Korea. Through this ne…                              │
+│                        │ MACERICH CO                  │ 2011 │ 6798 │ 10.8     │ ITEM 1. BUSINESS General The Company is involved in the    │
+│                        │                              │      │      │          │ acquisition, ownership, development, redevelopment,        │
+│                        │                              │      │      │          │ management and leasing of regional and community shopping  │
+│                        │                              │      │      │          │ centers located throughout the United States. The Company  │
+│                        │                              │      │      │          │ is the sole general partner of, and owns a majority of the │
+│                        │                              │      │      │          │ ownership interes…                                         │
+│                        │ GIBRALTAR INDUSTRIES, INC.   │ 2013 │ 3310 │ 10.0     │ Item 1. Business The Company Gibraltar is a leading        │
+│                        │                              │      │      │          │ manufacturer and distributor of products that provide      │
+│                        │                              │      │      │          │ structural and architectural enhancements for residential  │
+│                        │                              │      │      │          │ homes, low-rise retail, other commercial and professional  │
+│                        │                              │      │      │          │ buildings, industrial plants, bridges and a wide-variety   │
+│                        │                              │      │      │          │ of other structures. …                                     │
+│                        │ MASCO CORP /DE/              │ 2002 │ 3430 │ 8.3      │ ITEM 1. BUSINESS. Masco Corporation manufactures, sells    │
+│                        │                              │      │      │          │ and installs home improvement and building products, with  │
+│                        │                              │      │      │          │ emphasis on brand name products and services holding       │
+│                        │                              │      │      │          │ leadership positions in their markets. The Company is      │
+│                        │                              │      │      │          │ among the largest manufacturers in North America of brand  │
+│                        │                              │      │      │          │ name consumer product…                                     │
+│                        │ NACCO INDUSTRIES INC         │ 2010 │ 3630 │ 8.0      │ Item 1. BUSINESS General NACCO Industries, Inc. (“NACCO”   │
+│                        │                              │      │      │          │ or the “Company”) is a holding company with the following  │
+│                        │                              │      │      │          │ principal businesses: lift trucks, small appliances,       │
+│                        │                              │      │      │          │ specialty retail and mining. (a)NACCO Materials Handling   │
+│                        │                              │      │      │          │ Group. NACCO Materials Handling Group consists of the      │
+│                        │                              │      │      │          │ Company’s wholly owne…                                     │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #3: idx 85887          │ ESSEX PROPERTY TRUST, INC.   │ 2002 │ 6798 │ 2.6      │ Item 1. Business Description of Business Essex Property    │
+│ s=0.1061               │                              │      │      │          │ Trust, Inc. ("the Company" or "Essex") is a self-          │
+│ n=220                  │                              │      │      │          │ administered and self-managed equity real estate           │
+│                        │                              │      │      │          │ investment trust ("REIT") engaged in the ownership,        │
+│                        │                              │      │      │          │ acquisition, development and management of multifamily     │
+│                        │                              │      │      │          │ apartment communities. The Company's mu…                   │
+│                        │ UDR, Inc.                    │ 2007 │ 6798 │ 2.4      │ Item 1. BUSINESS General UDR, Inc. is a self administered  │
+│                        │                              │      │      │          │ real estate investment trust, or REIT, that owns,          │
+│                        │                              │      │      │          │ acquires, renovates, develops, and manages apartment       │
+│                        │                              │      │      │          │ communities nationwide. At December 31, 2007, our          │
+│                        │                              │      │      │          │ apartment portfolio included 234 communities located in 30 │
+│                        │                              │      │      │          │ markets, with a total of 65,86…                            │
+│                        │ CORPORATE OFFICE PROPERTIES T│ 1998 │ 6798 │ 1.5      │ Item 1. Business Our Company Corporate Office Properties   │
+│                        │                              │      │      │          │ Trust ("COPT") and subsidiaries is a full-service real     │
+│                        │                              │      │      │          │ estate investment trust ("REIT"). We focus principally on  │
+│                        │                              │      │      │          │ the acquisition, development, management and ownership of  │
+│                        │                              │      │      │          │ suburban office buildings in targeted suburban submarkets  │
+│                        │                              │      │      │          │ mostly in the …                                            │
+│                        │ VORNADO REALTY TRUST         │ 2011 │ 6798 │ 1.4      │ ITEM 1. BUSINESS Vornado Realty Trust (“Vornado”) is a     │
+│                        │                              │      │      │          │ fully-integrated real estate investment trust (“REIT”) and │
+│                        │                              │      │      │          │ conducts its business through, and substantially all of    │
+│                        │                              │      │      │          │ its interests in properties are held by, Vornado Realty    │
+│                        │                              │      │      │          │ L.P., a Delaware limited partnership (the “Operating       │
+│                        │                              │      │      │          │ Partnership”). Accord…                                     │
+│                        │ SALESFORCE.COM, INC.         │ 2013 │ 7372 │ 1.4      │ ITEM 1. BUSINESS Overview We are a provider of enterprise  │
+│                        │                              │      │      │          │ cloud computing solutions. We were founded on the simple   │
+│                        │                              │      │      │          │ concept of delivering customer relationship management, or │
+│                        │                              │      │      │          │ CRM, applications via the Internet, or “cloud.” We         │
+│                        │                              │      │      │          │ introduced our first CRM solution in February 2000 and we  │
+│                        │                              │      │      │          │ have expanded our…                                         │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #4: idx 69398          │ LINCOLN NATIONAL CORP        │ 2004 │ 6311 │ 3.9      │ Item 1. Business OVERVIEW Lincoln National Corporation     │
+│ s=0.0965               │                              │      │      │          │ (“LNC” which also may be referred to as “we” or “our” or   │
+│ n=1522                 │                              │      │      │          │ “us”) is a holding company, which operates multiple        │
+│                        │                              │      │      │          │ insurance and investment management businesses through     │
+│                        │                              │      │      │          │ subsidiary companies. LNC was organized under the laws of  │
+│                        │                              │      │      │          │ the state of Indiana in…                                   │
+│                        │ ESSEX PROPERTY TRUST, INC.   │ 2018 │ 6798 │ 3.8      │ Item 1. Business OVERVIEW Essex Property Trust, Inc.       │
+│                        │                              │      │      │          │ ("Essex"), a Maryland corporation, is an S&P 500 company   │
+│                        │                              │      │      │          │ that operates as a self-administered and self-managed real │
+│                        │                              │      │      │          │ estate investment trust ("REIT"). Essex owns all of its    │
+│                        │                              │      │      │          │ interest in its real estate and other investments directly │
+│                        │                              │      │      │          │ or indirectly th…                                          │
+│                        │ AMERICAN BIO MEDICA CORP     │ 2020 │ 2834 │ 3.5      │ ITEM 1. BUSINESS Form and Year of Organization American    │
+│                        │                              │      │      │          │ Bio Medica Corporation (the “Company”) was incorporated on │
+│                        │                              │      │      │          │ April 2, 1986 under the laws of the State of New York      │
+│                        │                              │      │      │          │ under the name American Micro Media, Inc. On September 9,  │
+│                        │                              │      │      │          │ 1992, we filed an amendment to our Articles of             │
+│                        │                              │      │      │          │ Incorporation and changed …                                │
+│                        │ HARSCO CORP                  │ 2020 │ 8900 │ 2.8      │ Item 1. Business. OUR COMPANY - OUR VISION Harsco          │
+│                        │                              │      │      │          │ Corporation is a market-leading, global provider of        │
+│                        │                              │      │      │          │ environmental solutions for industrial and specialty waste │
+│                        │                              │      │      │          │ streams, and innovative equipment and technology for the   │
+│                        │                              │      │      │          │ rail sector. Our three reportable business segments are    │
+│                        │                              │      │      │          │ Harsco Environmental, Hars…                                │
+│                        │ CHINA PHARMA HOLDINGS, INC.  │ 2008 │ 2834 │ 2.6      │ Item 1. Business Overview China Pharma Holdings, Inc.      │
+│                        │                              │      │      │          │ (formerly, TS Electronics, Inc. and prior thereto,         │
+│                        │                              │      │      │          │ Softstone, Inc.) was incorporated on January 28, 1999,     │
+│                        │                              │      │      │          │ pursuant to the provisions of the General Corporation Act  │
+│                        │                              │      │      │          │ of the State of Delaware. On May 31, 1999, we merged with  │
+│                        │                              │      │      │          │ Soft Stone Building Prod…                                  │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #5: idx 25691          │ REVIVA PHARMACEUTICALS HOLDIN│ 2019 │ 2834 │ 5.2      │ Item 1. Business BUSINESS General We are a blank check     │
+│ s=0.0958               │                              │      │      │          │ company formed pursuant to the laws of the British Virgin  │
+│ n=1795                 │                              │      │      │          │ Islands on March 20, 2018 for the purpose of acquiring,    │
+│                        │                              │      │      │          │ through a merger, capital stock exchange, asset            │
+│                        │                              │      │      │          │ acquisition, stock purchase, reorganization,               │
+│                        │                              │      │      │          │ recapitalization, exchangeable share t…                    │
+│                        │ FASTENAL CO                  │ 2016 │ 5200 │ 4.4      │ ITEM 1. BUSINESS Note - Information in this section is as  │
+│                        │                              │      │      │          │ of year end unless otherwise noted. The year end is        │
+│                        │                              │      │      │          │ December 31, 2016 unless additional years are included or  │
+│                        │                              │      │      │          │ noted. Our Internet address for corporate and investor     │
+│                        │                              │      │      │          │ information is www.fastenal.com. The information contained │
+│                        │                              │      │      │          │ on our website or …                                        │
+│                        │ FIRST BANCORP /NC/           │ 2011 │ 6022 │ 3.9      │ Item 1. Business General Description First Bancorp (the    │
+│                        │                              │      │      │          │ “Company”) is a bank holding company. Our principal        │
+│                        │                              │      │      │          │ activity is the ownership and operation of First Bank (the │
+│                        │                              │      │      │          │ “Bank”), a state-chartered bank with its main office in    │
+│                        │                              │      │      │          │ Troy, North Carolina. The Company is also the parent to a  │
+│                        │                              │      │      │          │ series of statutory…                                       │
+│                        │ FIRST OF LONG ISLAND CORP    │ 2020 │ 6021 │ 3.6      │ ITEM 1. BUSINESS General The First of Long Island          │
+│                        │                              │      │      │          │ Corporation (“Registrant”), a one-bank holding company,    │
+│                        │                              │      │      │          │ was incorporated on February 7, 1984 for the purpose of    │
+│                        │                              │      │      │          │ providing financial services through its wholly-owned      │
+│                        │                              │      │      │          │ subsidiary, The First National Bank of Long Island. The    │
+│                        │                              │      │      │          │ consolidated entity is refer…                              │
+│                        │ FIRST FINANCIAL BANCORP /OH/ │ 2011 │ 6021 │ 3.5      │ Item 1. Business. First Financial Bancorp. First Financial │
+│                        │                              │      │      │          │ Bancorp., an Ohio corporation (First Financial, the        │
+│                        │                              │      │      │          │ Company, we, us, our), was formed in 1982. First Financial │
+│                        │                              │      │      │          │ is a mid-sized, regional bank holding company              │
+│                        │                              │      │      │          │ headquartered in Cincinnati, Ohio. First Financial engages │
+│                        │                              │      │      │          │ in the business of commer…                                 │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #6: idx 76142          │ Coda Octopus Group, Inc.     │ 2009 │ 3812 │ 8.5      │ ITEM 1. BUSINESS Overview Coda Octopus Group, Inc. (“the   │
+│ s=0.0866               │                              │      │      │          │ Company”, “we” or “us”) is engaged in 3D subsea technology │
+│ n=3067                 │                              │      │      │          │ and are the developer and patent holder of real-time 3D    │
+│                        │                              │      │      │          │ sonar technology which we expect to play a critical role   │
+│                        │                              │      │      │          │ in the next generation of underwater port security and in  │
+│                        │                              │      │      │          │ other sectors…                                             │
+│                        │ TEAM INC                     │ 2009 │ 7600 │ 6.7      │ ITEM 1. BUSINESS General Information Unless otherwise      │
+│                        │                              │      │      │          │ indicated, the terms “Team, Inc.,” “Team,” “the Company,”  │
+│                        │                              │      │      │          │ “we,” “our” and “us” are used in this report to refer to   │
+│                        │                              │      │      │          │ Team, Inc., to one or more of our consolidated             │
+│                        │                              │      │      │          │ subsidiaries or to all of them taken as a whole. We are    │
+│                        │                              │      │      │          │ incorporated in the State of…                              │
+│                        │ COMCAST CORP                 │ 2014 │ 4841 │ 6.0      │ Item 1: Business We are a global media and technology      │
+│                        │                              │      │      │          │ company with two primary businesses, Comcast Cable and     │
+│                        │                              │      │      │          │ NBCUniversal. We were incorporated under the laws of       │
+│                        │                              │      │      │          │ Pennsylvania in December 2001. Through our predecessors,   │
+│                        │                              │      │      │          │ we have developed, managed and operated cable systems      │
+│                        │                              │      │      │          │ since 1963. In 2011, we acq…                               │
+│                        │ VIASAT INC                   │ 2020 │ 3663 │ 5.7      │ ITEM 1. BUSINESS Corporate Information We were             │
+│                        │                              │      │      │          │ incorporated in California in 1986 under the name Viasat,  │
+│                        │                              │      │      │          │ Inc., and subsequently reincorporated in Delaware in 1996. │
+│                        │                              │      │      │          │ The mailing address of our worldwide headquarters is 6155  │
+│                        │                              │      │      │          │ El Camino Real, Carlsbad, California 92009, and our        │
+│                        │                              │      │      │          │ telephone number at that l…                                │
+│                        │ AMERICAN ELECTRIC POWER CO IN│ 2013 │ 4911 │ 4.1      │ ITEM 1. BUSINESS GENERAL Overview and Description of       │
+│                        │                              │      │      │          │ Material Subsidiaries AEP was incorporated under the laws  │
+│                        │                              │      │      │          │ of the State of New York in 1906 and reorganized in 1925.  │
+│                        │                              │      │      │          │ It is a public utility holding company that owns, directly │
+│                        │                              │      │      │          │ or indirectly, all of the outstanding common stock of its  │
+│                        │                              │      │      │          │ public utility…                                            │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #7: idx 28270          │ UNIFI INC                    │ 2001 │ 2200 │ 13.0     │ ITEM 1. BUSINESS Unifi, Inc., a New York corporation       │
+│ s=0.0842               │                              │      │      │          │ formed in 1969, together with its subsidiaries,            │
+│ n=1443                 │                              │      │      │          │ hereinafter set forth, (the "Company" or "Unifi"), is one  │
+│                        │                              │      │      │          │ of the largest and most diversified producers and          │
+│                        │                              │      │      │          │ processors of textile yarns in the world. The Company is   │
+│                        │                              │      │      │          │ primarily engaged in the processin…                        │
+│                        │ O-I Glass, Inc. /DE/         │ 2006 │ 3221 │ 6.8      │ ITEM 1. BUSINESS General Development of Business Owens-    │
+│                        │                              │      │      │          │ Illinois, Inc. (the “Company”), through its subsidiaries,  │
+│                        │                              │      │      │          │ is the successor to a business established in 1903. The    │
+│                        │                              │      │      │          │ Company is one of the world’s leading manufacturers of     │
+│                        │                              │      │      │          │ packaging products based on sales revenue and is the       │
+│                        │                              │      │      │          │ largest manufacturer of…                                   │
+│                        │ Amcor plc                    │ 2019 │ 3990 │ 6.1      │ Item 1. - Business The Company Amcor plc (ARBN 630 385     │
+│                        │                              │      │      │          │ 278) is a holding company incorporated under the name      │
+│                        │                              │      │      │          │ Arctic Jersey Limited as a limited company under the laws  │
+│                        │                              │      │      │          │ of the Bailiwick of Jersey in July, 2018, in order to      │
+│                        │                              │      │      │          │ effect the Company's combination with Bemis Company, Inc.  │
+│                        │                              │      │      │          │ On October 10, 2018, …                                     │
+│                        │ BRANDYWINE REALTY TRUST      │ 2013 │ 6798 │ 5.9      │ Item 1. Business Introduction We are a self-administered   │
+│                        │                              │      │      │          │ and self-managed REIT that provides leasing, property      │
+│                        │                              │      │      │          │ management, development, redevelopment, acquisition and    │
+│                        │                              │      │      │          │ other tenant-related services for a portfolio of office,   │
+│                        │                              │      │      │          │ mixed-use and industrial properties. As of December 31,    │
+│                        │                              │      │      │          │ 2013, we owned 204 p…                                      │
+│                        │ EASTMAN CHEMICAL CO          │ 2008 │ 2821 │ 5.4      │ ITEM 1. BUSINESS CORPORATE OVERVIEW Eastman Chemical       │
+│                        │                              │      │      │          │ Company ("Eastman" or the "Company") is a global chemical  │
+│                        │                              │      │      │          │ company which manufactures and sells a broad portfolio of  │
+│                        │                              │      │      │          │ chemicals, plastics, and fibers. Eastman began business in │
+│                        │                              │      │      │          │ 1920 for the purpose of producing chemicals for Eastman    │
+│                        │                              │      │      │          │ Kodak Company's …                                          │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #8: idx 118134         │ CUMMINS INC                  │ 2006 │ 3510 │ 16.2     │ Item 1. Business OVERVIEW Cummins Inc. (“Cummins,” “the    │
+│ s=0.0827               │                              │      │      │          │ Company,” “the registrant,” “we,” “our,” or “us”) is a     │
+│ n=2466                 │                              │      │      │          │ global power leader that designs, manufactures,            │
+│                        │                              │      │      │          │ distributes and services diesel and natural gas engines,   │
+│                        │                              │      │      │          │ electric power generation systems and engine-related       │
+│                        │                              │      │      │          │ component products, including f…                           │
+│                        │ FORD MOTOR CO                │ 2017 │ 3711 │ 9.6      │ ITEM 1. Business. Ford Motor Company was incorporated in   │
+│                        │                              │      │      │          │ Delaware in 1919. We acquired the business of a Michigan   │
+│                        │                              │      │      │          │ company, also known as Ford Motor Company, which had been  │
+│                        │                              │      │      │          │ incorporated in 1903 to produce and sell automobiles       │
+│                        │                              │      │      │          │ designed and engineered by Henry Ford. We are a global     │
+│                        │                              │      │      │          │ company based in Dea…                                      │
+│                        │ Leatt Corp                   │ 2017 │ 3751 │ 8.2      │ ITEM 1. BUSINESS Business Overview Leatt designs,          │
+│                        │                              │      │      │          │ develops, markets and distributes personal protective      │
+│                        │                              │      │      │          │ equipment for participants in all forms of motor sports    │
+│                        │                              │      │      │          │ and leisure activities, including riders of motorcycles,   │
+│                        │                              │      │      │          │ bicycles, snowmobiles and ATVs. The Company sells its      │
+│                        │                              │      │      │          │ products to customers worldwi…                             │
+│                        │ BURZYNSKI RESEARCH INSTITUTE │ 2020 │ 2835 │ 7.6      │ ITEM 1.BUSINESS General Burzynski Research Institute, Inc. │
+│                        │                              │      │      │          │ (the “Company”) was incorporated under the laws of the     │
+│                        │                              │      │      │          │ State of Delaware in 1984 in order to engage in the        │
+│                        │                              │      │      │          │ research, production, marketing, promotion and sale of     │
+│                        │                              │      │      │          │ certain medical chemical compounds composed of growth-     │
+│                        │                              │      │      │          │ inhibiting peptides, amin…                                 │
+│                        │ BORGWARNER INC               │ 2014 │ 3714 │ 6.6      │ ITEM 1. BUSINESS BorgWarner Inc. and Consolidated          │
+│                        │                              │      │      │          │ Subsidiaries (the “Company”) is a Delaware corporation     │
+│                        │                              │      │      │          │ incorporated in 1987. We are a leading global supplier of  │
+│                        │                              │      │      │          │ highly engineered automotive systems and components        │
+│                        │                              │      │      │          │ primarily for powertrain applications. Our products help   │
+│                        │                              │      │      │          │ improve vehicle performance,…                              │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #9: idx 54245          │ INVESCO DB BASE METALS FUND  │ 2020 │ 6221 │ 13.6     │ ITEM 1. BUSINESS Introduction Invesco DB Base Metals Fund  │
+│ s=0.0812               │                              │      │      │          │ (the “Fund”), a separate series of Invesco DB Multi-Sector │
+│ n=4788                 │                              │      │      │          │ Commodity Trust (the “Trust”), a Delaware statutory trust  │
+│                        │                              │      │      │          │ organized in seven separate series, was formed on August   │
+│                        │                              │      │      │          │ 3, 2006. The term of the Fund is perpetual (unless         │
+│                        │                              │      │      │          │ terminated earlie…                                         │
+│                        │ ROYAL CARIBBEAN CRUISES LTD  │ 2004 │ 4400 │ 13.4     │ Item 1. Business General Royal Caribbean International was │
+│                        │                              │      │      │          │ founded in 1968. The current parent corporation, Royal     │
+│                        │                              │      │      │          │ Caribbean Cruises Ltd., was incorporated on July 23, 1985  │
+│                        │                              │      │      │          │ in the Republic of Liberia under the Business Corporation  │
+│                        │                              │      │      │          │ Act of Liberia. We are the world’s second largest cruise   │
+│                        │                              │      │      │          │ company with …                                             │
+│                        │ Invesco DB Energy Fund       │ 2020 │ 6221 │ 13.2     │ ITEM 1. BUSINESS Introduction Invesco DB Energy Fund (the  │
+│                        │                              │      │      │          │ “Fund”), a separate series of Invesco DB Multi-Sector      │
+│                        │                              │      │      │          │ Commodity Trust (the “Trust”), a Delaware statutory trust  │
+│                        │                              │      │      │          │ organized in seven separate series, was formed on August   │
+│                        │                              │      │      │          │ 3, 2006. The term of the Fund is perpetual (unless         │
+│                        │                              │      │      │          │ terminated earlier in …                                    │
+│                        │ Invesco DB Precious Metals Fu│ 2020 │ 6221 │ 12.4     │ ITEM 1. BUSINESS Introduction Invesco DB Precious Metals   │
+│                        │                              │      │      │          │ Fund (the “Fund”), a separate series of Invesco DB Multi-  │
+│                        │                              │      │      │          │ Sector Commodity Trust (the “Trust”), a Delaware statutory │
+│                        │                              │      │      │          │ trust organized in seven separate series, was formed on    │
+│                        │                              │      │      │          │ August 3, 2006. The term of the Fund is perpetual (unless  │
+│                        │                              │      │      │          │ terminated ea…                                             │
+│                        │ Invesco DB Oil Fund          │ 2020 │ 6221 │ 11.9     │ ITEM 1. BUSINESS Introduction Invesco DB Oil Fund (the     │
+│                        │                              │      │      │          │ “Fund”), a separate series of Invesco DB Multi-Sector      │
+│                        │                              │      │      │          │ Commodity Trust (the “Trust”), a Delaware statutory trust  │
+│                        │                              │      │      │          │ organized in seven separate series, was formed on August   │
+│                        │                              │      │      │          │ 3, 2006. The term of the Fund is perpetual (unless         │
+│                        │                              │      │      │          │ terminated earlier in cer…                                 │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #10: idx 87440         │ GENERAL DYNAMICS CORP        │ 2009 │ 3730 │ 6.8      │ ITEM 1. BUSINESS BUSINESS OVERVIEW General Dynamics offers │
+│ s=0.0790               │                              │      │      │          │ a broad portfolio of products and services in business     │
+│ n=1097                 │                              │      │      │          │ aviation; combat vehicles, weapons systems and munitions;  │
+│                        │                              │      │      │          │ shipbuilding design, repair and construction; and          │
+│                        │                              │      │      │          │ information systems, technologies and services.            │
+│                        │                              │      │      │          │ Incorporated in Delaware, we e…                            │
+│                        │ CARPENTER TECHNOLOGY CORP    │ 2018 │ 3312 │ 3.7      │ Item 1. Business (a) General Development of Business:      │
+│                        │                              │      │      │          │ Carpenter Technology Corporation, founded in 1889, is      │
+│                        │                              │      │      │          │ engaged in the manufacturing, fabrication and distribution │
+│                        │                              │      │      │          │ of specialty metals. As used throughout this report,       │
+│                        │                              │      │      │          │ unless the context requires otherwise, the terms           │
+│                        │                              │      │      │          │ “Carpenter”, “Company”, “Regist…                           │
+│                        │ TEREX CORP                   │ 2013 │ 3537 │ 3.4      │ ITEM 1. BUSINESS GENERAL Terex is a lifting and material   │
+│                        │                              │      │      │          │ handling solutions company. We are focused on improving    │
+│                        │                              │      │      │          │ our operations and delivering reliable, customer-driven    │
+│                        │                              │      │      │          │ solutions for a wide range of commercial applications,     │
+│                        │                              │      │      │          │ including the construction, infrastructure, quarrying,     │
+│                        │                              │      │      │          │ mining, manufacturing…                                     │
+│                        │ TrueBlue, Inc.               │ 2015 │ 7363 │ 3.0      │ Item 1. BUSINESS OUR COMPANY TrueBlue, Inc. (“TrueBlue,”   │
+│                        │                              │      │      │          │ “we,” “us,” “our”) is a leading provider of specialized    │
+│                        │                              │      │      │          │ workforce solutions, helping clients improve growth and    │
+│                        │                              │      │      │          │ performance by providing contingent staffing and           │
+│                        │                              │      │      │          │ recruitment of permanent employee solutions. Our workforce │
+│                        │                              │      │      │          │ solutions meet clients’…                                   │
+│                        │ EASTMAN CHEMICAL CO          │ 2011 │ 2821 │ 2.9      │ ITEM 1. Business Corporate Overview Business Strategy      │
+│                        │                              │      │      │          │ Manufacturing Streams Cyclicality and Seasonality          │
+│                        │                              │      │      │          │ Financial Strategy Business Segments CASPI Segment Fibers  │
+│                        │                              │      │      │          │ Segment PCI Segment Specialty Plastics Segment Regional    │
+│                        │                              │      │      │          │ Business Overview Corporate Initiatives Discontinued       │
+│                        │                              │      │      │          │ Operations Eastman Chemical C…                             │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #11: idx 76716         │ INTERNATIONAL PAPER CO /NEW/ │ 2016 │ 2621 │ 5.1      │ ITEM 1. BUSINESS GENERAL International Paper Company (the  │
+│ s=0.0755               │                              │      │      │          │ “Company” or “International Paper,” which may also be      │
+│ n=795                  │                              │      │      │          │ referred to as “we” or “us”) is a global producer of       │
+│                        │                              │      │      │          │ renewable fiber-based packaging, pulp and paper products   │
+│                        │                              │      │      │          │ with manufacturing operations in North America, Latin      │
+│                        │                              │      │      │          │ America, Europe, North A…                                  │
+│                        │ Johnson Controls Internationa│ 2004 │ 7380 │ 3.2      │ Item 1. Business General Tyco International Ltd. ("we,"    │
+│                        │                              │      │      │          │ "Tyco" or the "Company") is a diversified manufacturing    │
+│                        │                              │      │      │          │ and service company that, through its subsidiaries:        │
+│                        │                              │      │      │          │ •designs, manufactures, installs, monitors and services    │
+│                        │                              │      │      │          │ electronic security and fire protection systems; •designs, │
+│                        │                              │      │      │          │ manufactures and dist…                                     │
+│                        │ II-VI INC                    │ 1999 │ 3827 │ 3.0      │ ITEM 1. BUSINESS Introduction II-VI Incorporated ("II-VI"  │
+│                        │                              │      │      │          │ or the "Company") was incorporated in Pennsylvania in      │
+│                        │                              │      │      │          │ 1971. The Company's executive offices are located at 375   │
+│                        │                              │      │      │          │ Saxonburg Boulevard, Saxonburg, Pennsylvania 16056. Its    │
+│                        │                              │      │      │          │ telephone number is 724-352-4455. Reference to the         │
+│                        │                              │      │      │          │ "Company" or "II-VI" in …                                  │
+│                        │ SemiLEDs Corp                │ 2020 │ 3674 │ 3.0      │ Item 1. Business Company Overview We develop, manufacture  │
+│                        │                              │      │      │          │ and sell light emitting diode (LED) chips and LED          │
+│                        │                              │      │      │          │ components, LED modules and systems. Our products are used │
+│                        │                              │      │      │          │ for general lighting and specialty industrial              │
+│                        │                              │      │      │          │ applications, including ultraviolet, or UV, curing of      │
+│                        │                              │      │      │          │ polymers, LED light therapy in me…                         │
+│                        │ SPX CORP                     │ 2014 │ 3540 │ 2.7      │ ITEM 1. Business (All currency and share amounts are in    │
+│                        │                              │      │      │          │ millions) Forward-Looking Information Some of the          │
+│                        │                              │      │      │          │ statements in this document and any documents incorporated │
+│                        │                              │      │      │          │ by reference, including any statements as to operational   │
+│                        │                              │      │      │          │ and financial projections, constitute "forward-looking     │
+│                        │                              │      │      │          │ statements" within the …                                   │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #12: idx 114977        │ Seagate Technology Holdings p│ 2011 │ 3572 │ 4.6      │ ITEM 1. BUSINESS We are the world's leading provider of    │
+│ s=0.0747               │                              │      │      │          │ hard disk drives based on revenue. We design, manufacture, │
+│ n=2152                 │                              │      │      │          │ market and sell hard disk drives. Hard disk drives,        │
+│                        │                              │      │      │          │ commonly referred to as disk drives, hard drives or HDDs,  │
+│                        │                              │      │      │          │ are devices that store digitally encoded data on rapidly   │
+│                        │                              │      │      │          │ rotating disks wit…                                        │
+│                        │ GRACO INC                    │ 2004 │ 3561 │ 4.4      │ Item 1. Business General Information Graco Inc. (“Graco”   │
+│                        │                              │      │      │          │ or “the Company”) supplies systems and equipment for the   │
+│                        │                              │      │      │          │ management of fluids in industrial, commercial and vehicle │
+│                        │                              │      │      │          │ lubrication applications. The Company’s products help      │
+│                        │                              │      │      │          │ customers solve difficult manufacturing problems, increase │
+│                        │                              │      │      │          │ productivity, …                                            │
+│                        │ SIGNET INTERNATIONAL HOLDINGS│ 2020 │ 3590 │ 3.2      │ Item 1. Business Overview Signet International Holdings,   │
+│                        │                              │      │      │          │ Inc. (the “Company”) was incorporated on February 2, 2005  │
+│                        │                              │      │      │          │ in accordance with the Laws of the State of Delaware as    │
+│                        │                              │      │      │          │ 51142, Inc. The Company changed its corporate name to      │
+│                        │                              │      │      │          │ Signet International Holdings, Inc. in conjunction with    │
+│                        │                              │      │      │          │ the September 8, 20…                                       │
+│                        │ HASBRO, INC.                 │ 2017 │ 3944 │ 2.8      │ Item 1. Business. General Development and Description of   │
+│                        │                              │      │      │          │ Business and Business Segments Overview We are a global    │
+│                        │                              │      │      │          │ play and entertainment company committed to Creating the   │
+│                        │                              │      │      │          │ World’s Best Play Experiences. We strive to do this        │
+│                        │                              │      │      │          │ through deep consumer engagement and the application of    │
+│                        │                              │      │      │          │ consumer insights, the…                                    │
+│                        │ CTO Realty Growth, Inc.      │ 2014 │ 6798 │ 2.7      │ ITEM 1. BUSINESS We are a diversified real estate          │
+│                        │                              │      │      │          │ operating company. We own and manage forty-three           │
+│                        │                              │      │      │          │ commercial real estate properties in ten states in the     │
+│                        │                              │      │      │          │ U.S. As of December 31, 2014, we owned thirty-six single-  │
+│                        │                              │      │      │          │ tenant and seven multi-tenant income-producing properties  │
+│                        │                              │      │      │          │ with over 1,100,000 square feet…                           │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #13: idx 4932          │ HURCO COMPANIES INC          │ 2020 │ 3823 │ 20.1     │ Item 1.BUSINESS General Hurco Companies, Inc. is an        │
+│ s=0.0741               │                              │      │      │          │ international, industrial technology company. We design,   │
+│ n=3283                 │                              │      │      │          │ manufacture, and sell computerized (i.e., Computer Numeric │
+│                        │                              │      │      │          │ Control (“CNC”)) machine tools, consisting primarily of    │
+│                        │                              │      │      │          │ vertical machining centers (mills) and turning centers     │
+│                        │                              │      │      │          │ (lathes), to companie…                                     │
+│                        │ CARPENTER TECHNOLOGY CORP    │ 2014 │ 3312 │ 12.7     │ Item 1. Business (a) General Development of Business:      │
+│                        │                              │      │      │          │ Carpenter Technology Corporation, incorporated in 1904, is │
+│                        │                              │      │      │          │ engaged in the manufacturing, fabrication and distribution │
+│                        │                              │      │      │          │ of specialty metals. As used throughout this report,       │
+│                        │                              │      │      │          │ unless the context requires otherwise, the terms           │
+│                        │                              │      │      │          │ “Carpenter”, the “Company”…                                │
+│                        │ KENNAMETAL INC               │ 2008 │ 3541 │ 12.0     │ ITEM 1 - BUSINESS OVERVIEW Kennametal Inc. was             │
+│                        │                              │      │      │          │ incorporated in Pennsylvania in 1943. We are a leading     │
+│                        │                              │      │      │          │ global supplier of tooling, engineered components and      │
+│                        │                              │      │      │          │ advanced materials consumed in production processes. We    │
+│                        │                              │      │      │          │ believe that our reputation for manufacturing excellence   │
+│                        │                              │      │      │          │ as well as our technological ex…                           │
+│                        │ 3D SYSTEMS CORP              │ 2020 │ 7372 │ 11.5     │ Item 1. Business General 3D Systems Corporation (“3D       │
+│                        │                              │      │      │          │ Systems” or the “Company” or “we” or “us”) markets our     │
+│                        │                              │      │      │          │ products and services through subsidiaries in North        │
+│                        │                              │      │      │          │ America and South America (collectively referred to as     │
+│                        │                              │      │      │          │ “Americas”), Europe and the Middle East (collectively      │
+│                        │                              │      │      │          │ referred to as “EMEA”) and the …                           │
+│                        │ DEERE & CO                   │ 2019 │ 3523 │ 8.0      │ ITEM 1. BUSINESS. This Annual Report on Form 10-K contains │
+│                        │                              │      │      │          │ forward-looking statements that are subject to risks and   │
+│                        │                              │      │      │          │ uncertainties. All statements other than statements of     │
+│                        │                              │      │      │          │ historical fact included in this Annual Report on Form     │
+│                        │                              │      │      │          │ 10-K are forward-looking statements. Forward-looking       │
+│                        │                              │      │      │          │ statements give our c…                                     │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #14: idx 95282         │ AUTOMATIC DATA PROCESSING INC│ 2013 │ 7374 │ 28.5     │ Item 1. Business CORPORATE BACKGROUND General ADP® was     │
+│ s=0.0729               │                              │      │      │          │ founded in 1949 on an innovative idea to help business     │
+│ n=4586                 │                              │      │      │          │ owners focus on core business activities by relieving them │
+│                        │                              │      │      │          │ from certain administrative tasks such as payroll.         │
+│                        │                              │      │      │          │ Automatic Data Processing, Inc. was incorporated in the    │
+│                        │                              │      │      │          │ State of Delaware in Jun…                                  │
+│                        │ INTEL CORP                   │ 2006 │ 3674 │ 22.1     │ ITEM 1. BUSINESS Industry We are the world’s largest       │
+│                        │                              │      │      │          │ semiconductor chip maker, based on revenue. We develop     │
+│                        │                              │      │      │          │ advanced integrated digital technology platforms and       │
+│                        │                              │      │      │          │ components, primarily integrated circuits, for the         │
+│                        │                              │      │      │          │ computing and communications industries. Integrated        │
+│                        │                              │      │      │          │ circuits are semiconductor chips etc…                      │
+│                        │ TORO CO                      │ 2017 │ 3524 │ 15.6     │ ITEM 1. BUSINESS Introduction The Toro Company was         │
+│                        │                              │      │      │          │ incorporated in Minnesota in 1935 as a successor to a      │
+│                        │                              │      │      │          │ business founded in 1914 and reincorporated in Delaware in │
+│                        │                              │      │      │          │ 1983. Unless the context indicates otherwise, the terms    │
+│                        │                              │      │      │          │ "company," "Toro," "we," "our," or "us" refer to The Toro  │
+│                        │                              │      │      │          │ Company and its consol…                                    │
+│                        │ INTUIT INC                   │ 1999 │ 7372 │ 14.4     │ ITEM 1 BUSINESS CAUTIONS ABOUT FORWARD-LOOKING STATEMENTS  │
+│                        │                              │      │      │          │ This Form 10-K includes "forward-looking" statements about │
+│                        │                              │      │      │          │ future financial results, future products and other events │
+│                        │                              │      │      │          │ that have not yet occurred. For example, statements like   │
+│                        │                              │      │      │          │ we "expect," we "anticipate" or we "believe" are forward-  │
+│                        │                              │      │      │          │ looking st…                                                │
+│                        │ DEERE & CO                   │ 2014 │ 3523 │ 14.2     │ ITEM 1. BUSINESS. Products Deere & Company (the Company)   │
+│                        │                              │      │      │          │ and its subsidiaries (collectively, John Deere) have       │
+│                        │                              │      │      │          │ operations that are categorized into three major business  │
+│                        │                              │      │      │          │ segments. The agriculture and turf segment primarily       │
+│                        │                              │      │      │          │ manufactures and distributes a full line of agriculture    │
+│                        │                              │      │      │          │ and turf equipment and …                                   │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #15: idx 72202         │ RALPH LAUREN CORP            │ 2013 │ 2320 │ 12.2     │ Item 1. Business. General Founded in 1967 by Mr. Ralph     │
+│ s=0.0720               │                              │      │      │          │ Lauren, we are a global leader in the design, marketing,   │
+│ n=298                  │                              │      │      │          │ and distribution of premium lifestyle products, including  │
+│                        │                              │      │      │          │ men’s, women’s, and children’s apparel, accessories,       │
+│                        │                              │      │      │          │ fragrances, and home furnishings. Our long-standing        │
+│                        │                              │      │      │          │ reputation and distinctiv…                                 │
+│                        │ AMERICAN EAGLE OUTFITTERS INC│ 2017 │ 5651 │ 8.0      │ Item 1. Business. General American Eagle Outfitters, Inc., │
+│                        │                              │      │      │          │ (“AEO Inc.,” the “Company,” “we,” “our”) a Delaware        │
+│                        │                              │      │      │          │ corporation, was founded in 1977. We are a leading multi-  │
+│                        │                              │      │      │          │ brand specialty retailer, operating over 1,000 retail      │
+│                        │                              │      │      │          │ stores and online at www.ae.com and www.aerie.com in the   │
+│                        │                              │      │      │          │ U.S. and internationa…                                     │
+│                        │ RH                           │ 2013 │ 5712 │ 3.8      │ Item 1. Business Overview We believe RH is one of the most │
+│                        │                              │      │      │          │ innovative and fastest growing luxury brands in the home   │
+│                        │                              │      │      │          │ furnishings marketplace. We believe our brand stands alone │
+│                        │                              │      │      │          │ and is redefining this highly fragmented and growing       │
+│                        │                              │      │      │          │ market, contributing to our superior sales growth and      │
+│                        │                              │      │      │          │ market share gains…                                        │
+│                        │ PVH CORP. /DE/               │ 2018 │ 2320 │ 2.6      │ Item 1. Business Introduction Unless the context otherwise │
+│                        │                              │      │      │          │ requires, the terms “we,” “our” or “us” refer to PVH Corp. │
+│                        │                              │      │      │          │ and its subsidiaries. Our fiscal years are based on the    │
+│                        │                              │      │      │          │ 52-53 week period ending on the Sunday closest to February │
+│                        │                              │      │      │          │ 1 and are designated by the calendar year in which the     │
+│                        │                              │      │      │          │ fiscal year …                                              │
+│                        │ MOVADO GROUP INC             │ 2020 │ 3873 │ 2.3      │ Item 1. Business GENERAL In this Form 10-K, all references │
+│                        │                              │      │      │          │ to the “Company” or “Movado Group” include Movado Group,   │
+│                        │                              │      │      │          │ Inc. and its subsidiaries, unless the context requires     │
+│                        │                              │      │      │          │ otherwise. The Company’s common stock is traded on the     │
+│                        │                              │      │      │          │ NYSE under the trading symbol MOV. Movado Group designs,   │
+│                        │                              │      │      │          │ sources, markets …                                         │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #16: idx 5075          │ ORACLE CORP                  │ 2012 │ 7372 │ 22.6     │ Item 1. Business General We are the world’s largest        │
+│ s=0.0708               │                              │      │      │          │ provider of enterprise software and a leading provider of  │
+│ n=3554                 │                              │      │      │          │ computer hardware products and services. Our software,     │
+│                        │                              │      │      │          │ hardware systems, and services businesses develop,         │
+│                        │                              │      │      │          │ manufacture, market, host and support database and         │
+│                        │                              │      │      │          │ middleware software, applications…                         │
+│                        │ iSign Solutions Inc.         │ 1998 │ 7372 │ 15.4     │ Item 1. Business General Communication Intelligence        │
+│                        │                              │      │      │          │ Corporation (the "Company" or "CIC") is a leading supplier │
+│                        │                              │      │      │          │ of pen enabling software solutions. CIC is headquartered   │
+│                        │                              │      │      │          │ in Redwood Shores, California and has a joint venture,     │
+│                        │                              │      │      │          │ Communication Intelligence Computer Corporation, Ltd.      │
+│                        │                              │      │      │          │ ("CICC" or the "Joint V…                                   │
+│                        │ HP INC                       │ 2002 │ 3570 │ 15.0     │ ITEM 1. Business. HP was incorporated in 1947 under the    │
+│                        │                              │      │      │          │ laws of the State of California as the successor to a      │
+│                        │                              │      │      │          │ partnership founded in 1939 by William R. Hewlett and      │
+│                        │                              │      │      │          │ David Packard. Effective in May 1998, we changed our state │
+│                        │                              │      │      │          │ of incorporation from California to Delaware. We are a     │
+│                        │                              │      │      │          │ leading global provide…                                    │
+│                        │ FRANKLIN COVEY CO            │ 2001 │ 8741 │ 13.6     │ Item 1. Business General Franklin Covey Co. (the “Company” │
+│                        │                              │      │      │          │ or “Franklin Covey”) is an international learning and      │
+│                        │                              │      │      │          │ performance solutions company dedicated to helping         │
+│                        │                              │      │      │          │ organizations, individuals and students become measurably  │
+│                        │                              │      │      │          │ more effective. To achieve that goal, the Company provides │
+│                        │                              │      │      │          │ training and educat…                                       │
+│                        │ ASURE SOFTWARE INC           │ 2009 │ 7373 │ 10.4     │ ITEM 1. BUSINESS GENERAL Forgent Networks, Inc. a Delaware │
+│                        │                              │      │      │          │ corporation d/b/a Asure Software ("Forgent" or the         │
+│                        │                              │      │      │          │ "Company"), is a provider of web-based workforce           │
+│                        │                              │      │      │          │ management solutions that enable organizations to manage   │
+│                        │                              │      │      │          │ their office environment as well as their human resource   │
+│                        │                              │      │      │          │ and payroll processes effec…                               │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #17: idx 111312        │ Cellectar Biosciences, Inc.  │ 2017 │ 2834 │ 8.7      │ Item 1.Business. Business Overview We are a clinical stage │
+│ s=0.0706               │                              │      │      │          │ biopharmaceutical company focused on the discovery,        │
+│ n=2411                 │                              │      │      │          │ development and commercialization of drugs for the         │
+│                        │                              │      │      │          │ treatment of cancer. Our core objective is to leverage our │
+│                        │                              │      │      │          │ proprietary phospholipid drug conjugateTM (PDCsTM)         │
+│                        │                              │      │      │          │ delivery platform to develop…                              │
+│                        │ CALIFORNIA WATER SERVICE GROU│ 2018 │ 4941 │ 6.9      │ Item 1. Business. Forward-Looking Statements This annual   │
+│                        │                              │      │      │          │ report, including all documents incorporated by reference, │
+│                        │                              │      │      │          │ contains forward-looking statements within the meaning     │
+│                        │                              │      │      │          │ established by the Private Securities Litigation Reform    │
+│                        │                              │      │      │          │ Act of 1995. Forward-looking statements in this annual     │
+│                        │                              │      │      │          │ report are based o…                                        │
+│                        │ SIMON PROPERTY GROUP INC /DE/│ 2005 │ 6798 │ 5.8      │ Item 1. Business Background Simon Property Group, Inc.     │
+│                        │                              │      │      │          │ ("Simon Property") is a Delaware corporation that operates │
+│                        │                              │      │      │          │ as a self-administered and self-managed real estate        │
+│                        │                              │      │      │          │ investment trust ("REIT"). Simon Property Group, L.P. (the │
+│                        │                              │      │      │          │ "Operating Partnership") is a majority-owned partnership   │
+│                        │                              │      │      │          │ subsidiary of Simo…                                        │
+│                        │ Adaptimmune Therapeutics PLC │ 2017 │ 2836 │ 4.9      │ Item 1. Business Overview We are a clinical-stage          │
+│                        │                              │      │      │          │ biopharmaceutical company focused on providing novel cell  │
+│                        │                              │      │      │          │ therapies to patients, particularly in solid tumors. Our   │
+│                        │                              │      │      │          │ comprehensive and proprietary SPEAR (Specific Peptide      │
+│                        │                              │      │      │          │ Enhanced Affinity Receptor) T-cell platform enables us to  │
+│                        │                              │      │      │          │ identify cancer targets…                                   │
+│                        │ CIMPRESS plc                 │ 2016 │ 2750 │ 4.6      │ Item 1. Business Overview We are a technology driven       │
+│                        │                              │      │      │          │ company that aggregates, via the Internet, large volumes   │
+│                        │                              │      │      │          │ of small, individually customized orders for a broad       │
+│                        │                              │      │      │          │ spectrum of print, signage, apparel and similar products.  │
+│                        │                              │      │      │          │ We fulfill those orders with manufacturing capabilities    │
+│                        │                              │      │      │          │ that include Cimpress o…                                   │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #18: idx 48183         │ TEXAS INSTRUMENTS INC        │ 2008 │ 3674 │ 5.2      │ ITEM 1. Business. Company Overview At Texas Instruments    │
+│ s=0.0701               │                              │      │      │          │ Incorporated (TI), we design and make semiconductors that  │
+│ n=1541                 │                              │      │      │          │ we sell to electronics designers and manufacturers all     │
+│                        │                              │      │      │          │ over the world. We began operations in 1930 and are        │
+│                        │                              │      │      │          │ incorporated in Delaware. We are headquartered in Dallas,  │
+│                        │                              │      │      │          │ Texas, and have desig…                                     │
+│                        │ TORO CO                      │ 2014 │ 3524 │ 5.0      │ ITEM 1. BUSINESS Introduction The Toro Company was         │
+│                        │                              │      │      │          │ incorporated in Minnesota in 1935 as a successor to a      │
+│                        │                              │      │      │          │ business founded in 1914 and reincorporated in Delaware in │
+│                        │                              │      │      │          │ 1983. Unless the context indicates otherwise, the terms    │
+│                        │                              │      │      │          │ "company," "Toro," "we," "us," and "our" refer to The Toro │
+│                        │                              │      │      │          │ Company and its conso…                                     │
+│                        │ Polaris Inc.                 │ 2013 │ 3790 │ 4.1      │ Item 1. Business Polaris Industries Inc., a Minnesota      │
+│                        │                              │      │      │          │ corporation, was formed in 1994 and is the successor to    │
+│                        │                              │      │      │          │ Polaris Industries Partners LP. The terms “Polaris,” the   │
+│                        │                              │      │      │          │ “Company,” “we,” “us,” and “our” as used herein refer to   │
+│                        │                              │      │      │          │ the business and operations of Polaris Industries Inc.,    │
+│                        │                              │      │      │          │ its subsidiaries and…                                      │
+│                        │ MERCURY GENERAL CORP         │ 2013 │ 6331 │ 3.3      │ Item 1. Business General Mercury General Corporation       │
+│                        │                              │      │      │          │ (“Mercury General”) and its subsidiaries (referred to      │
+│                        │                              │      │      │          │ herein collectively as the “Company”) are primarily        │
+│                        │                              │      │      │          │ engaged in writing personal automobile insurance through   │
+│                        │                              │      │      │          │ 13 insurance subsidiaries (referred to herein collectively │
+│                        │                              │      │      │          │ as the “Insurance Compani…                                 │
+│                        │ AGILYSYS INC                 │ 2002 │ 7373 │ 3.3      │ Item 1. Business General and Significant Events Pioneer-   │
+│                        │                              │      │      │          │ Standard Electronics, Inc. was organized as an Ohio        │
+│                        │                              │      │      │          │ corporation in 1963 and maintains its principal office at  │
+│                        │                              │      │      │          │ 6065 Parkland Boulevard, Mayfield Heights, Ohio 44124      │
+│                        │                              │      │      │          │ (telephone number (440) 720-8500). Except as otherwise     │
+│                        │                              │      │      │          │ stated, the terms “Compan…                                 │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #19: idx 91567         │ RING ENERGY, INC.            │ 2020 │ 1311 │ 34.7     │ Item 1: Business General Ring Energy, Inc., a Nevada       │
+│ s=0.0701               │                              │      │      │          │ corporation (“Ring,” “Ring Energy,” the “Company,” “we,”   │
+│ n=2328                 │                              │      │      │          │ “us,” “our,” or similar terms), is a growth oriented       │
+│                        │                              │      │      │          │ independent exploration and production company based in    │
+│                        │                              │      │      │          │ The Woodlands, Texas and is engaged in oil and natural gas │
+│                        │                              │      │      │          │ development, productio…                                    │
+│                        │ OMEGA HEALTHCARE INVESTORS IN│ 2020 │ 6798 │ 30.9     │ Item 1 - Business Overview; Recent Events Omega Healthcare │
+│                        │                              │      │      │          │ Investors, Inc. (“Omega”) was incorporated in the state of │
+│                        │                              │      │      │          │ Maryland on March 31, 1992, and has elected to be taxed as │
+│                        │                              │      │      │          │ a real estate investment trust (“REIT”) for federal income │
+│                        │                              │      │      │          │ tax purposes. Omega is structured as an umbrella           │
+│                        │                              │      │      │          │ partnership REI…                                           │
+│                        │ SMITH & WESSON BRANDS, INC.  │ 2013 │ 3480 │ 30.6     │ Item 1. Business Introduction We are one of the world’s    │
+│                        │                              │      │      │          │ leading manufacturers of firearms. We manufacture a wide   │
+│                        │                              │      │      │          │ array of handguns (including revolvers and pistols), long  │
+│                        │                              │      │      │          │ guns (including modern sporting, bolt action, and single   │
+│                        │                              │      │      │          │ shot rifles), handcuffs, and firearm-related products and  │
+│                        │                              │      │      │          │ accessories fo…                                            │
+│                        │ POPULAR, INC.                │ 2020 │ 6022 │ 27.3     │ ITEM 1. BUSINESS General Popular is a diversified,         │
+│                        │                              │      │      │          │ publicly-owned financial holding company, registered under │
+│                        │                              │      │      │          │ the Bank Holding Company Act of 1956, as amended (the “BHC │
+│                        │                              │      │      │          │ Act”) and subject to supervision and regulation by the     │
+│                        │                              │      │      │          │ Board of Governors of the Federal Reserve System (the      │
+│                        │                              │      │      │          │ “Federal Reserve Board…                                    │
+│                        │ NOVAVAX INC                  │ 2012 │ 2836 │ 26.6     │ Item 1. BUSINESS This Annual Report on Form 10-K contains  │
+│                        │                              │      │      │          │ forward-looking statements, within the meaning of the      │
+│                        │                              │      │      │          │ Private Securities Litigation Reform Act that involve      │
+│                        │                              │      │      │          │ risks and uncertainties. In some cases, forward-looking    │
+│                        │                              │      │      │          │ statements are identified by words such as “believe,”      │
+│                        │                              │      │      │          │ “anticipate,” “intend,” …                                  │
+├────────────────────────┼──────────────────────────────┼──────┼──────┼──────────┼────────────────────────────────────────────────────────────┤
+│ #20: idx 24662         │ MEI Pharma, Inc.             │ 2009 │ 2834 │ 9.4      │ Item 1. Business Overview of Our Business We are a         │
+│ s=0.0691               │                              │      │      │          │ developmental stage pharmaceutical company listed on the   │
+│ n=3150                 │                              │      │      │          │ NASDAQ Global Market under the symbol “MSHL”. We were      │
+│                        │                              │      │      │          │ incorporated on December 1, 2000 as a wholly-owned         │
+│                        │                              │      │      │          │ subsidiary of Novogen Limited, an Australian company.      │
+│                        │                              │      │      │          │ Novogen Limited’s ordinary shares…                         │
+│                        │ IMPERIAL OIL LTD             │ 2011 │ 2911 │ 8.4      │ Item 1. Business Imperial Oil Limited was incorporated     │
+│                        │                              │      │      │          │ under the laws of Canada in 1880 and was continued under   │
+│                        │                              │      │      │          │ the Canada Business Corporations Act (the “CBCA”) by       │
+│                        │                              │      │      │          │ certificate of continuance dated April 24, 1978. The head  │
+│                        │                              │      │      │          │ and principal office of the company is located at 237      │
+│                        │                              │      │      │          │ Fourth Avenue S.W. Calg…                                   │
+│                        │ NIKE, Inc.                   │ 2012 │ 3021 │ 7.5      │ ITEM 1. Business General NIKE, Inc. was incorporated in    │
+│                        │                              │      │      │          │ 1968 under the laws of the state of Oregon. As used in     │
+│                        │                              │      │      │          │ this report, the terms “we”, “us”, “NIKE” and the          │
+│                        │                              │      │      │          │ “Company” refer to NIKE, Inc. and its predecessors,        │
+│                        │                              │      │      │          │ subsidiaries and affiliates, unless the context indicates  │
+│                        │                              │      │      │          │ otherwise. Our internet addre…                             │
+│                        │ EQT Corp                     │ 2017 │ 1311 │ 6.9      │ Item 1. Business General EQT Corporation (EQT or the       │
+│                        │                              │      │      │          │ Company) conducts its business through five business       │
+│                        │                              │      │      │          │ segments: EQT Production, EQM Gathering, EQM Transmission, │
+│                        │                              │      │      │          │ RMP Gathering and RMP Water. EQT Production is the leading │
+│                        │                              │      │      │          │ natural gas producer in the United States, based on        │
+│                        │                              │      │      │          │ average daily sales volu…                                  │
+│                        │ EGAIN Corp                   │ 2008 │ 7372 │ 5.5      │ ITEM 1. BUSINESS This report on Form 10-K and the          │
+│                        │                              │      │      │          │ documents incorporated herein by reference contain         │
+│                        │                              │      │      │          │ forward-looking statements that involve risks and          │
+│                        │                              │      │      │          │ uncertainties. These statements may be identified by the   │
+│                        │                              │      │      │          │ use of the words such as “anticipates,” “believes,”        │
+│                        │                              │      │      │          │ “continue,” “could,” “would,” “estimates…                  │
+└────────────────────────┴──────────────────────────────┴──────┴──────┴──────────┴────────────────────────────────────────────────────────────┘
