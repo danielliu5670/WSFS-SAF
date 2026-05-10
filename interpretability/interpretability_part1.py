@@ -75,8 +75,8 @@ if args.discover_columns:
 
 name_col = find_col(df_c, ["company_name", "companyname", "name",
                             "comp_name", "ticker"])
-desc_col = find_col(df_c, ["description", "text", "filing_text",
-                            "business_description"])
+desc_col = find_col(df_c, ["description", "section_1", "text",
+                            "filing_text", "business_description"])
 sic_col  = find_col(df_c, ["sic_code", "sic", "siccode"])
 
 if desc_col is None:
